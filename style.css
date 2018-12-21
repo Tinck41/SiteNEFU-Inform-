@@ -2,7 +2,6 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  
 }
 
 body{
@@ -12,7 +11,7 @@ body{
   font-family: 'Amatic SC', cursive;
 }
 
-.bdy {
+.bdy:not(nav) {
   margin: 0;
   padding: 0;
   perspective: 1px;
@@ -96,13 +95,11 @@ nav {
   box-sizing: border-box;
   transition: .3s;
   z-index: 2;
+  overflow: none;
 }
 
 nav.white {
   background: #fff;
-  height: 100px;
-  padding: 10px 100px;
-
 }
 
 nav .logo {
