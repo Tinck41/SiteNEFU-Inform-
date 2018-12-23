@@ -5,17 +5,6 @@
 	<title>ivt18 - Glushkov</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script type="text/javascript">
-		$(window).on('scroll', function () {
-			if($(window).scrollTop()) {
-				$('nav').addClass('white');
-			}
-			else {
-				$('nav').removeClass('white');
-			}
-		})
-	</script>
 </head>
  
 <body>
@@ -32,7 +21,8 @@
 	  	</nav>
 	</div>
 
-
+	
+	<div class="bdy">
 	<header>
 
     <h1> Best Places in the World</h1>
@@ -41,14 +31,52 @@
 	</header>
 
 	<section class="post">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nibh augue, elementum a nisi facilisis, placerat elementum est. Etiam et tellus eget libero volutpat commodo. In hac habitasse platea dictumst. Quisque mattis mollis enim et laoreet. Sed congue sapien sit amet enim lacinia blandit. Donec turpis sapien, commodo ut mattis in, sollicitudin sed odio. Donec gravida vehicula risus dictum luctus. Mauris vel arcu suscipit, fringilla sapien sit amet, bibendum magna. Pellentesque libero orci, viverra vel laoreet at, viverra a justo. Pellentesque non consequat risus, eu tincidunt odio.
-
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nibh augue, elementum a nisi facilisis, placerat elementum est. Etiam et tellus eget libero volutpat commodo. In hac habitasse platea dictumst. Quisque mattis mollis enim et laoreet. Sed congue sapien sit amet enim lacinia blandit. Donec turpis sapien, commodo ut mattis in, sollicitudin sed odio. Donec gravida vehicula risus dictum luctus. Mauris vel arcu suscipit, fringilla sapien sit amet, bibendum magna. Pellentesque libero orci, viverra vel laoreet at, viverra a justo. Pellentesque non consequat risus, eu tincidunt odio.
-
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nibh augue, elementum a nisi facilisis, placerat elementum est. Etiam et tellus eget libero volutpat commodo. In hac habitasse platea dictumst. Quisque mattis mollis enim et laoreet. Sed congue sapien sit amet enim lacinia blandit. Donec turpis sapien, commodo ut mattis in, sollicitudin sed odio. Donec gravida vehicula risus dictum luctus. Mauris vel arcu suscipit, fringilla sapien sit amet, bibendum magna. Pellentesque libero orci, viverra vel laoreet at, viverra a justo. Pellentesque non consequat risus, eu tincidunt odio.
-
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nibh augue, elementum a nisi facilisis, placerat elementum est. Etiam et tellus eget libero volutpat commodo. In hac habitasse platea dictumst. Quisque mattis mollis enim et laoreet. Sed congue sapien sit amet enim lacinia blandit. Donec turpis sapien, commodo ut mattis in, sollicitudin sed odio. Donec gravida vehicula risus dictum luctus. Mauris vel arcu suscipit, fringilla sapien sit amet, bibendum magna. Pellentesque libero orci, viverra vel laoreet at, viverra a justo. Pellentesque non consequat risus, eu tincidunt odio.
+		<div id="MainContent">
+			<div id="AccordMenu">
+				<h2>what part of the world are you interested in?</h2>
+				<div class="item">
+					<input type="checkbox" id="check1">
+					<label for="check1">Europe</label>
+					<ul>
+						<li><a href="#" onclick="change(1)">Plitvice Lakes</a></li>
+						<li><a href="#" onclick="change(2)">Lake Bled</a></li>
+						<li><a href="#" onclick="change(3)">Amalfi Coast</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check2">
+					<label for="check2">Asia</label>
+					<ul>
+						<li><a href="#" onclick="change(4)">Krabi, Thailand</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check3">
+					<label for="check3">South America</label>
+					<ul>
+						<li><a href="#" onclick="change(5)">Salar de Uyuni</a></li>
+						<li><a href="#" onclick="change(6)">Torres del Paine National Park</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<input type="checkbox" id="check4">
+					<label for="check4">North America</label>
+					<ul>
+						<li><a href="#" onclick="change(7)">Maroon Bells</a></li>
+						<li><a href="#" onclick="change(8)">Grand Canyon</a></li>
+						<li><a href="#" onclick="change(9)">Blue Ridge Mountains</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="Text">
+				<div id="cont">
+					<h2 id="head"></h2>
+					<p id="txt"></p>
+				</div>
+			</div>
+		</div>
 	</section>
+	</div>
 </body>
-  
+<script type="text/javascript" src="script.js"></script>
 </html>

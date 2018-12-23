@@ -2,6 +2,8 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body{
@@ -11,7 +13,7 @@ body{
   font-family: 'Amatic SC', cursive;
 }
 
-.bdy:not(nav) {
+.bdy {
   margin: 0;
   padding: 0;
   perspective: 1px;
@@ -88,18 +90,15 @@ section {
 nav {
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 10vmin;
   top: 0;
   left: 0;
+  background: #fff;
   padding: 10px 100px;
   box-sizing: border-box;
   transition: .3s;
   z-index: 2;
-  overflow: none;
-}
-
-nav.white {
-  background: #fff;
+  overflow: hidden;
 }
 
 nav .logo {
@@ -111,10 +110,6 @@ nav .logo {
   color: red;
   float: left;
   transition: .3s;
-}
-
-nav.white .logo {
-  color: red;
 }
 
 nav ul {
@@ -189,3 +184,87 @@ nav ul li a:hover {
  
 }
 
+#MainContent {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #9f9fa0;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+#AccordMenu {
+  width: 400px;
+  height: auto;
+  margin: 100px auto;
+  font-weight: bold;
+}
+
+#Text {
+  height: 100vmin;
+  width: 150vmin;
+}
+
+.item label {
+  display: block;
+  padding: 10px;
+  background-color: brown;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  border-bottom: solid 2px #aaa;
+}
+
+.item label:hover {
+  background-color: #f2673a;
+}
+
+.item ul {
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: all .4s linear;
+  margin: 0;
+  padding: 0;
+}
+
+.item ul li a {
+  margin: 2px;
+  width: 100%;
+  height: 20px;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #434343;
+  color: #fff;
+  border-bottom: solid 2px #aaa;
+
+}
+
+.item input:checked ~ ul{
+  height: auto;
+  max-height: 200px;
+  transform: all;
+}
+
+.item input {
+  display: none;
+}
+
+.item ul li a:hover{
+  background-color: #9CF;
+}
+
+#cont {
+  margin-top: 13vmin;
+  margin-bottom: 13vmin;
+  margin-left: 5vmin;
+  background: #fc873f;  
+  border: 4px double black;
+  width: 135vmin;
+  height: 80vmin;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+}
